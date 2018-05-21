@@ -251,10 +251,12 @@ export default class EventManager {
     let targetFormat = this.modifierKeys.shift ? 'text' : 'html';
     let pastedPost = parsePostFromPaste(event, editor, {targetFormat});
 
-    editor.run(postEditor => {
-      let nextPosition = postEditor.insertPost(position, pastedPost);
-      postEditor.setRange(nextPosition);
-    });
+    if (!pastedPost.isBlank) {
+      editor.run(postEditor => {
+        let nextPosition = postEditor.insertPost(position, pastedPost);
+        postEditor.setRange(nextPosition);
+      });
+    }
   }
 
   drop(event) {
