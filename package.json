@@ -1,5 +1,5 @@
 {
-  "name": "mobiledoc-kit",
+  "name": "@tryghost/mobiledoc-kit",
   "version": "0.10.21",
   "description": "A toolkit for building WYSIWYG editors with Mobiledoc",
   "repository": "https://github.com/bustle/mobiledoc-kit",
