@@ -5,6 +5,7 @@ import { NO_BREAK_SPACE } from 'mobiledoc-kit/renderers/editor-dom';
 import Range from 'mobiledoc-kit/utils/cursor/range';
 import Keycodes from 'mobiledoc-kit/utils/keycodes';
 import Browser from 'mobiledoc-kit/utils/browser';
+import { DIRECTION } from 'mobiledoc-kit/utils/key';
 
 const { test, module } = Helpers;
 
@@ -665,18 +666,15 @@ test('delete with option (Mac) or control (Win)  key deletes full word', (assert
   editor.selectRange(new Range(editor.post.tailPosition()));
 
   let keyCode = Browser.isMac() ? Keycodes.ALT : Keycodes.CTRL;
+  let altKey = Browser.isMac();
+  let ctrlKey = !Browser.isMac();
 
-  Helpers.dom.triggerKeyEvent(editor, 'keydown', {keyCode});
   Helpers.wait(() => {
-    Helpers.dom.triggerDelete(editor);
+    Helpers.dom.triggerDelete(editor, DIRECTION.BACKWARD, {altKey, ctrlKey});
 
     Helpers.wait(() => {
-      Helpers.dom.triggerKeyEvent(editor, 'keyup', {keyCode});
-
-      Helpers.wait(() => {
-        assert.postIsSimilar(editor.post, expected);
-        done();
-      });
+      assert.postIsSimilar(editor.post, expected);
+      done();
     });
   });
 });

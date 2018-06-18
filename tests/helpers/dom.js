@@ -154,18 +154,17 @@ function createMockEvent(eventName, element, options={}) {
   return event;
 }
 
-function triggerDelete(editor, direction=DIRECTION.BACKWARD) {
+function triggerDelete(editor, direction=DIRECTION.BACKWARD, options={}) {
   assertEditor(editor);
   const keyCode = direction === DIRECTION.BACKWARD ? KEY_CODES.BACKSPACE :
                                                      KEY_CODES.DELETE;
-  let event = createMockEvent('keydown', editor.element, {
-    keyCode
-  });
+  let eventOptions = merge({keyCode}, options);
+  let event = createMockEvent('keydown', editor.element, eventOptions);
   _triggerEditorEvent(editor, event);
 }
 
-function triggerForwardDelete(editor) {
-  return triggerDelete(editor, DIRECTION.FORWARD);
+function triggerForwardDelete(editor, options) {
+  return triggerDelete(editor, DIRECTION.FORWARD, options);
 }
 
 function triggerEnter(editor) {

@@ -407,7 +407,7 @@ test('paste with shift key pastes plain text', (assert) => {
   Helpers.dom.triggerCopyEvent(editor);
   editor.selectRange(editor.post.tailPosition());
 
-  Helpers.dom.triggerKeyEvent(editor, 'keydown', { keyCode: Keycodes.SHIFT });
+  Helpers.dom.triggerKeyEvent(editor, 'keydown', { keyCode: Keycodes.SHIFT, shiftKey: true });
   Helpers.dom.triggerPasteEvent(editor);
 
   assert.postIsSimilar(editor.post, expected);
