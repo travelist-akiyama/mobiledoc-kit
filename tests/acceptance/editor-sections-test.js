@@ -665,9 +665,16 @@ test('delete with option (Mac) or control (Win)  key deletes full word', (assert
 
   editor.selectRange(new Range(editor.post.tailPosition()));
 
-  let keyCode = Browser.isMac() ? Keycodes.ALT : Keycodes.CTRL;
-  let altKey = Browser.isMac();
-  let ctrlKey = !Browser.isMac();
+  let altKey, ctrlKey;
+  if (Browser.isMac()) {
+    /* Mac key codes for navigation by word */
+    altKey = true;
+    ctrlKey = false;
+  } else {
+    /* PC key codes for navigation by word */
+    altKey = false;
+    ctrlKey = true;
+  }
 
   Helpers.wait(() => {
     Helpers.dom.triggerDelete(editor, DIRECTION.BACKWARD, {altKey, ctrlKey});
