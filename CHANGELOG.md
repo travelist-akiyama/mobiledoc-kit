@@ -1,6 +1,16 @@
+<a name="0.11.1-ghost.2"></a>
+## <small>0.11.1-ghost.2 (2018-08-01)</small>
+
+* @tryghost/mobiledoc-kit 0.11.1-ghost.1 ([03bf423](https://github.com/bustle/mobiledoc-kit/commit/03bf423))
+* Fixed copy/paste of card section following a list section ([5a171e1](https://github.com/bustle/mobiledoc-kit/commit/5a171e1))
+* Fixed word movements stopping on accented/non-latin chars ([a192cdb](https://github.com/bustle/mobiledoc-kit/commit/a192cdb)), closes [#628](https://github.com/bustle/mobiledoc-kit/issues/628)
+
+
+
 <a name="0.11.1"></a>
 ## <small>0.11.1 (2018-06-21)</small>
 
+* v0.11.1 ([9cbb2ba](https://github.com/bustle/mobiledoc-kit/commit/9cbb2ba))
 
 
 
@@ -11,10 +21,17 @@
 * Avoid running top-level text nodes through parserPlugins twice ([9de4405](https://github.com/bustle/mobiledoc-kit/commit/9de4405))
 * Be more patient for Safari getting focus ([c82acfe](https://github.com/bustle/mobiledoc-kit/commit/c82acfe))
 * Bump yarn.lock ([215e755](https://github.com/bustle/mobiledoc-kit/commit/215e755))
+* Changed module scope ([f827511](https://github.com/bustle/mobiledoc-kit/commit/f827511))
+* Failing tests for #494 ([e0ecd7e](https://github.com/bustle/mobiledoc-kit/commit/e0ecd7e)), closes [#494](https://github.com/bustle/mobiledoc-kit/issues/494)
 * Failing tests for #494 ([be446f6](https://github.com/bustle/mobiledoc-kit/commit/be446f6)), closes [#494](https://github.com/bustle/mobiledoc-kit/issues/494)
 * Fix error when pasting HTML that parses to a blank doc ([cd7fa1d](https://github.com/bustle/mobiledoc-kit/commit/cd7fa1d)), closes [#619](https://github.com/bustle/mobiledoc-kit/issues/619)
+* Fix error when pasting HTML that parses to a blank doc ([9a1b10f](https://github.com/bustle/mobiledoc-kit/commit/9a1b10f)), closes [#619](https://github.com/bustle/mobiledoc-kit/issues/619)
+* Fix issue #592 ([d318a2b](https://github.com/bustle/mobiledoc-kit/commit/d318a2b)), closes [#592](https://github.com/bustle/mobiledoc-kit/issues/592)
+* Fix sticky modifier keys for word deletion ([895bfa9](https://github.com/bustle/mobiledoc-kit/commit/895bfa9))
 * Fix sticky modifier keys for word deletion ([fce2d90](https://github.com/bustle/mobiledoc-kit/commit/fce2d90))
 * Fix typo in README.md ([1abaf40](https://github.com/bustle/mobiledoc-kit/commit/1abaf40))
+* Ghost-specific version bump for release ([f564568](https://github.com/bustle/mobiledoc-kit/commit/f564568))
+* Run parser plugins for top-level unknown elements ([75e9c33](https://github.com/bustle/mobiledoc-kit/commit/75e9c33))
 * Run parser plugins for top-level unknown elements ([daf2fe0](https://github.com/bustle/mobiledoc-kit/commit/daf2fe0))
 * Scope package.json scripts ([7111f85](https://github.com/bustle/mobiledoc-kit/commit/7111f85))
 * v0.11.0 ([79b074d](https://github.com/bustle/mobiledoc-kit/commit/79b074d))
