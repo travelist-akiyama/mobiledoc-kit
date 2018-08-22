@@ -1,9 +1,17 @@
+<a name="0.11.1-ghost.3"></a>
+## <small>0.11.1-ghost.3 (2018-08-22)</small>
+
+
+
+
 <a name="0.11.1-ghost.2"></a>
 ## <small>0.11.1-ghost.2 (2018-08-01)</small>
 
 * @tryghost/mobiledoc-kit 0.11.1-ghost.1 ([03bf423](https://github.com/bustle/mobiledoc-kit/commit/03bf423))
 * Fixed copy/paste of card section following a list section ([5a171e1](https://github.com/bustle/mobiledoc-kit/commit/5a171e1))
+* Fixed Ctrl+Backspace word delete on Linux ([c523c92](https://github.com/bustle/mobiledoc-kit/commit/c523c92)), closes [#634](https://github.com/bustle/mobiledoc-kit/issues/634)
 * Fixed word movements stopping on accented/non-latin chars ([a192cdb](https://github.com/bustle/mobiledoc-kit/commit/a192cdb)), closes [#628](https://github.com/bustle/mobiledoc-kit/issues/628)
+* v0.11.1-ghost.2 ([81b10ff](https://github.com/bustle/mobiledoc-kit/commit/81b10ff))
 
 
 
