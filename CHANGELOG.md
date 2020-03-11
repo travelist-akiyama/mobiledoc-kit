@@ -1,36 +1,51 @@
-<a name="0.11.2-ghost.4"></a>
-## <small>0.11.2-ghost.4 (2019-06-03)</small>
+<a name="0.12.3"></a>
+## <small>0.12.3 (2020-01-28)</small>
 
+* built website from 5fe628e863773b7681954646309d7a6edc5e0523 ([7b87e74](https://github.com/bustle/mobiledoc-kit/commit/7b87e74))
+* In the 0.3.2 renderer, omit empty section attribute arrays 🍭 ([c115337](https://github.com/bustle/mobiledoc-kit/commit/c115337))
+
+
+
+<a name="0.12.2"></a>
+## <small>0.12.2 (2020-01-10)</small>
+
+* Add Editor#removeAttribute to remove section attributes 🕯 ([3b4677a](https://github.com/bustle/mobiledoc-kit/commit/3b4677a))
+* Fix demo toolbars ([56f9929](https://github.com/bustle/mobiledoc-kit/commit/56f9929))
+* v0.12.2 ([5fe628e](https://github.com/bustle/mobiledoc-kit/commit/5fe628e))
+
+
+
+<a name="0.12.1"></a>
+## <small>0.12.1 (2019-09-20)</small>
+
+* Add button in demo to toggle blockquote ([4005732](https://github.com/bustle/mobiledoc-kit/commit/4005732))
+* Add Editor#activeSectionAttributes to support toolbar state for new section attributes in mobiledoc  ([0f65798](https://github.com/bustle/mobiledoc-kit/commit/0f65798))
+* Fix #689 ([95146e0](https://github.com/bustle/mobiledoc-kit/commit/95146e0)), closes [#689](https://github.com/bustle/mobiledoc-kit/issues/689)
+* Fix #694: Alignment of a section is removed when pressing "Enter" ([4fadc60](https://github.com/bustle/mobiledoc-kit/commit/4fadc60)), closes [#694](https://github.com/bustle/mobiledoc-kit/issues/694)
+* Remove redundant CSS from demo.css ([020dee3](https://github.com/bustle/mobiledoc-kit/commit/020dee3))
+* Replace Array.find with detect utility function 🦈 ([ea54c6b](https://github.com/bustle/mobiledoc-kit/commit/ea54c6b))
+* Replace Array.includes with utility function for IE11 compat 🐲 ([5535e08](https://github.com/bustle/mobiledoc-kit/commit/5535e08))
+* Replace for..of with forEach 🥓 ([529478f](https://github.com/bustle/mobiledoc-kit/commit/529478f))
+* Replace Object.entries with utility function 🥴 ([ebed97a](https://github.com/bustle/mobiledoc-kit/commit/ebed97a))
+* Set default range for 'setAttribute' in PostEditor ([53b36d7](https://github.com/bustle/mobiledoc-kit/commit/53b36d7))
+* Specify Sauce Connect version 🐾 ([654943d](https://github.com/bustle/mobiledoc-kit/commit/654943d))
+* Update testem/sauce labs dependencies 🐄 ([105f62b](https://github.com/bustle/mobiledoc-kit/commit/105f62b))
+* v0.12.1 ([d112ec3](https://github.com/bustle/mobiledoc-kit/commit/d112ec3))
+
+
+
+<a name="0.12.0-0"></a>
+## 0.12.0-0 (2019-07-16)
+
+* 🐛 Fixed atoms with no text value being removed when parsing top-level markerables ([4828dd6](https://github.com/bustle/mobiledoc-kit/commit/4828dd6))
 * 🐛 Fixed range#expandByMarker not expanding to beginning/end of section (#677) ([0000d1d](https://github.com/bustle/mobiledoc-kit/commit/0000d1d)), closes [#677](https://github.com/bustle/mobiledoc-kit/issues/677)
+* Bump spec to 0.3.2, optional section attributes (#681) ([0449e15](https://github.com/bustle/mobiledoc-kit/commit/0449e15)), closes [#681](https://github.com/bustle/mobiledoc-kit/issues/681)
 * Copy update in demo ([77de471](https://github.com/bustle/mobiledoc-kit/commit/77de471))
 * Fix sectionParser obliterating plain text content in certain circumstances (#685) ([e5f877f](https://github.com/bustle/mobiledoc-kit/commit/e5f877f)), closes [#685](https://github.com/bustle/mobiledoc-kit/issues/685)
-
-
-
-<a name="0.11.2-ghost.3"></a>
-## <small>0.11.2-ghost.3 (2019-05-04)</small>
-
-* 🐛 Fixed parser plugin handling of top-level comment nodes ([4696bfe](https://github.com/bustle/mobiledoc-kit/commit/4696bfe))
-* v0.11.2-ghost.3 ([228e2e4](https://github.com/bustle/mobiledoc-kit/commit/228e2e4))
-
-
-
-<a name="0.11.2-ghost.2"></a>
-## <small>0.11.2-ghost.2 (2019-05-03)</small>
-
-* 🐛 Fixed atoms with no text value being removed when parsing top-level markerables ([8d5b337](https://github.com/bustle/mobiledoc-kit/commit/8d5b337))
-* 🐛 Fixed atoms with no text value being removed when parsing top-level markerables ([4828dd6](https://github.com/bustle/mobiledoc-kit/commit/4828dd6))
-* Uncomment "FIXME" Google Docs nested uls test ([9e4a4c8](https://github.com/bustle/mobiledoc-kit/commit/9e4a4c8))
+* Implement Mobiledoc 0.3.2 (text alignment attribute) (continued) (#688) ([9d842fb](https://github.com/bustle/mobiledoc-kit/commit/9d842fb)), closes [#688](https://github.com/bustle/mobiledoc-kit/issues/688)
+* Remove node_modules/ path from scripts in package.json (#687) ([00a1c46](https://github.com/bustle/mobiledoc-kit/commit/00a1c46)), closes [#687](https://github.com/bustle/mobiledoc-kit/issues/687)
 * Uncomment "FIXME" Google Docs nested uls test (#678) ([358cd9d](https://github.com/bustle/mobiledoc-kit/commit/358cd9d)), closes [#678](https://github.com/bustle/mobiledoc-kit/issues/678)
-* v0.11.2-ghost.2 ([b808ae7](https://github.com/bustle/mobiledoc-kit/commit/b808ae7))
-
-
-
-<a name="0.11.2-ghost.1"></a>
-## <small>0.11.2-ghost.1 (2019-04-29)</small>
-
-* Fixed range#expandByMarker not expanding to beginning/end of section ([ab01ecb](https://github.com/bustle/mobiledoc-kit/commit/ab01ecb))
-* v0.11.2-ghost.1 ([2a24702](https://github.com/bustle/mobiledoc-kit/commit/2a24702))
+* v0.12.0-0 ([35ef6de](https://github.com/bustle/mobiledoc-kit/commit/35ef6de))
 
 
 
@@ -106,7 +121,8 @@
 * Fixed Ctrl+Backspace word delete on Linux ([c523c92](https://github.com/bustle/mobiledoc-kit/commit/c523c92)), closes [#634](https://github.com/bustle/mobiledoc-kit/issues/634)
 * Fixed word movements stopping on accented/non-latin chars ([a192cdb](https://github.com/bustle/mobiledoc-kit/commit/a192cdb)), closes [#628](https://github.com/bustle/mobiledoc-kit/issues/628)
 * trigger handlers without inserting newline ([71c438c](https://github.com/bustle/mobiledoc-kit/commit/71c438c))
-* v0.11.1-ghost.4 ([44da14c](https://github.com/bustle/mobiledoc-kit/commit/44da14c))
+* trim leading/trailing whitespace from sections that can occur when parsing indented HTML ([333c293](https://github.com/bustle/mobiledoc-kit/commit/333c293))
+* v0.11.2 ([2104893](https://github.com/bustle/mobiledoc-kit/commit/2104893))
 
 
 
