@@ -147,6 +147,7 @@ class Editor {
     this._editState = new EditState(this);
     this._callbacks = new LifecycleCallbacks(values(CALLBACK_QUEUES));
     this._beforeHooks = { toggleMarkup: [] };
+    this._isComposingOnBlankLine = false;
 
     DEFAULT_TEXT_INPUT_HANDLERS.forEach(handler => this.onTextInput(handler));
 
